@@ -1,0 +1,20 @@
+<!--ng is a directive that states that says we're going to be using this page as an angular application.-->
+<!--Directives go right into html tags and usually start with ng or with with data-ng: -->
+<html ng-app>
+	<head>
+		<title>Hello World</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+	</head>
+<body>
+		<!--Angular Binding-->
+		<input type="text" ng-model="inputText" placeholder="World" />
+		<h1>Hello {{inputText}}</h1>
+		<input type="text" ng-model="inputText2" placeholder = "Yo" />
+		<h2>Yo {{inputText2}}</h2>
+
+		<input type="text" ng-model="inputText3" placeholder="What's up?" />
+		<h2>What's up?</h2>
+		<h3>{{inputText3}}</h3>
+
+</body>
+</html>
